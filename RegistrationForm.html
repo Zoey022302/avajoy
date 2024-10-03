@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <style>
+        body {
+
+            padding-top: 0px;
+        	background: linear-gradient(25deg, #34495e, white);
+            display: flex;
+            justify-content: center;
+            font-family: Arial;
+        }
+         
+          .info p {
+        	color: #aab7b8;
+
+        }
+          .info option
+          .info input {
+            background-color: darkslategray;
+        }
+          .info {
+            background-color: #34495e;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        #header {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            margin: 0;
+            border: 0;
+        }
+        .groupField {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            border-radius: 10px; 
+        }
+        select {
+        	color: gray;
+        	background-color: #bfc9ca;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+            border-radius: 10px; 
+        }
+
+        
+        .groupField input[type="date"]{
+        	color: gray;
+        }
+
+        
+
+        #buttoninfo{
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 10px 230px;
+        
+        }
+        button {
+            font-family: Arial;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        #submit{
+            background-color: white;
+        }
+        #cancel{
+            background-color: white;
+        }
+        #submit:hover{
+            background-color: #2980b9;
+        }
+        #cancel:hover {
+            background-color: red;
+        }
+        .groupField label{
+            color: white;
+        }
+        .groupField input{
+        	background-color: #bfc9ca;
+        }
+        .groupField option{
+        	color: black;
+        	background-color: #6495ED;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           
+
+    </style>
+</head>
+<body>
+<div class="info">
+    <div id="header">  
+    </div>
+    <img scr= "" class="center" width="200" height="200" style="border-radius:50%; padding: 0px;">
+    <p style="font-family: Arial; font-weight: bold; font-size: 25px; text-align: center;" >Registration Information</p>
+    <form>
+
+        <div class="groupField">
+            <label>Enter First Name</label>
+            <input type="text" placeholder="First Name" required>
+        </div>
+        <div class="groupField">
+            <label>Enter Middle Name</label>
+            <input type="text" placeholder="Middle Name" required>
+        </div>
+        <div class="groupField">
+            <label>Enter Last Name</label>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="groupField">
+            <label>Suffix</label>
+            <select required>
+            <option value="">Select Suffix</option>
+            <option value="None">None</option>
+            <option value="Jr.">Jr.</option>
+            <option value="Sr.">Sr.</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+    </select>
+        </div>
+         <div class="groupField">
+            <label>Enter Birthdate</label>
+            <input type="date" required>
+        </div>
+        <div class="groupField">
+            <label>Email Address</label>
+            <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="groupField">
+            <label>Enter Username</label>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="groupField">
+            <label>Enter Password</label>
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="groupField">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" required>
+        </div>
+        <div id="buttoninfo">
+        <button style="font-family: Arial; "type="submit" id="submit" >Submit</button>
+        <button type="reset" id="cancel" >Cancel</button>
+    </div>
